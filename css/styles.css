@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-size: 14px;
+}
+
+h2 {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: 900;
+  font-size: 45px;
+  letter-spacing: -0.02em;
+  line-height: 100%;
+}
+
+h3 {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 41px;
+}
+
+/*----------------------------------------------------------*/
+/*-------------------- MOBILE LAYOUT -----------------------*/
+/*----------------------------------------------------------*/
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+/*----------------------------------------------------------*/
+/*-------------------- header block ------------------------*/
+
+header {
+  display: grid;
+  grid-template-rows: auto 43vh 43vh auto;
+}
+
+/*----------------------------------------------------------*/
+/*------------------------ main block ----------------------*/
+
+main {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+/*----------------------------------------------------------*/
+/*------------------------- footer block -------------------*/
+
+footer {
+  background-color: #777574;
+}
+
+/*----------------------------------------------------------*/
+/*-------------------- DESKTOP LAYOUT ----------------------*/
+/*----------------------------------------------------------*/
+
+@media screen and (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  /*--------------------------------------------------------*/
+  /*-------------------- header block ----------------------*/
+
+  header {
+    display: grid;
+    grid-template-rows: 45vh 45vh 10vh;
+    grid-template-columns: 50% 50%;
+  }
+
+  /*--------------------------------------------------------*/
+  /*------------------------ main block --------------------*/
+
+  main {
+    display: grid;
+    grid-template-rows: auto auto auto;
+  }
+
+  /*--------------------------------------------------------*/
+  /*-------------------- footer block ----------------------*/
+
+  footer {
+    height: 24vh;
+  }
+}
