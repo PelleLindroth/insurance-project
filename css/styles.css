@@ -381,6 +381,16 @@ footer {
     margin-top: 2em;
   }
 
+  .main-cardboard {
+    grid-row:1;
+    grid-column:1;
+    display:flex;
+  }
+
+  .main-cardboard figure {
+
+    
+  }
   /*-----main block three grid container-----*/
   .main-container-four {
     display: flex;
