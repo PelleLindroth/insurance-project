@@ -255,6 +255,39 @@ nav {
     width: 12em;
   }
 
+  .mapview {
+    grid-row:3/ span 2;
+    grid-column:1/ span 2;
+    height:407px;
+  }
+
+  .mapview div{
+    width: 323px;
+    height: 206px;
+    background-color:#FAB131;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    position:relative;
+    bottom:34.5em;
+    left:6.3em;
+  }
+
+  .mapview div h2 {
+    color:white;
+    text-align:center;
+    padding-top:0.5em;
+  }
+
+  .mapview div p {
+    padding-left:2em;
+  }
+
+  #pin {
+    position:relative;
+    left:33em;
+    bottom:17em;
+  }
+
+
   /*---------------------------------------------------------*/
   /*----------------------- footer block --------------------*/
 
