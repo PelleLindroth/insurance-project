@@ -389,10 +389,31 @@ footer {
     width: 256px;
     height: 308px;
     background-color: white;
-    justify-content: center;
-
     display: flex;
+    flex-direction:column;
     align-items: center;
+    overflow:visible;
+    border-radius:5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-cardboard div h4 {
+    margin-top:1em;
+    font-family:'Frank Ruhl Libre', serif;
+    font-weight:bold;
+    font-size:16px;
+    line-height:20px;
+    color:rgba(0, 0, 0, 0.9);
+  }
+
+  .main-cardboard div p {
+    font-family:'Fira Sans', sans-serif;
+    font-weight:bold;
+    font-size:11px;
+    line-height:18px;
+    color:rgba(0, 0, 0, 0.4);
+    text-align:center;
+    margin-top:1em;
   }
 
   .main-cardboard div div {
@@ -400,9 +421,10 @@ footer {
     width: 236px;
     height: 150px;
     border-radius: 4px;
-    margin-bottom: 15em;
     object-fit: contain;
     overflow: hidden;
+  
+    
   }
 
   #cardboard2 {
@@ -424,12 +446,12 @@ footer {
 
   #adult {
     position: relative;
-    top: 11.5em;
+    top:1em;
   }
 
   #old {
     position: relative;
-    top: 10em;
+    top:2em;
   }
 
   /*-----main block three grid container-----*/
