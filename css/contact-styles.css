@@ -16,6 +16,7 @@ p {
   color: rgba(255, 255, 255, 0.8);
 }
 
+h1,
 h2 {
   font-family: 'Frank Ruhl Libre', serif;
   font-weight: 900;
@@ -61,7 +62,7 @@ h3 {
   text-decoration: none;
 }
 
-.main-header-container h2 {
+.main-header-container h1 {
   margin: 4rem 0 0 2rem;
   max-width: 50%;
 }
@@ -114,7 +115,7 @@ nav {
     display: none;
   }
 
-  .main-header-container h2 {
+  .main-header-container h1 {
     margin: 0;
     max-width: 50%;
   }
@@ -166,77 +167,78 @@ nav {
     grid-template-rows: auto 10vh auto;
   }
   /*grid container*/
-  .box{
+  .box {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(4 120px);
-    background-color:#A9A19E;;
-    gap:1px;
-    }
+    background-color: #a9a19e;
+    gap: 1px;
+  }
 
-/*flexbox one*/
-.box-one{
+  /*flexbox one*/
+  .box-one {
     display: flex;
     flex-direction: column;
     grid-column: 1;
-    grid-row:1/4;
-    }
+    grid-row: 1/4;
+  }
 
-/*flexbox two*/
-.box-two{
+  /*flexbox two*/
+  .box-two {
     display: flex;
     flex-direction: column;
     grid-column: 2;
     margin-top: 100px;
-    }
+  }
 
-    /*text flexbox one*/
-  .topic{
-    margin-left:70px;
+  /*text flexbox one*/
+  .topic {
+    margin-left: 70px;
     margin-top: 100px;
     color: #ffffff;
     letter-spacing: 0.02em;
     font-style: normal;
-       }
+  }
 
-  /*---your email box---*/ 
- input[type=text1], select {
+  /*---your email box---*/
+  input[type='text1'],
+  select {
     width: 50%;
     padding: 12px 20px;
     margin: 10px 1px 10px 1px;
     border: 1px solid #fefefe;
     background-color: #fefefe;
     border-radius: 4px;
-    } 
+  }
 
   /*your email--your message text */
-label{
+  label {
     color: #ffffff;
     font-weight: bold;
     font-family: 'Fira sans';
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 0.02em;
-      }     
+  }
 
-      /*---textarea box--*/
-textarea{ 
+  /*---textarea box--*/
+  textarea {
     width: 52%;
     height: 150px;
     margin-top: 10px;
     padding: 18px 16px 18px 16px;
     border: 1px solid #ccc;
     border-radius: 2px;
-    resize:none;
+    resize: none;
     font-size: 14px;
-    font-family:'Fira Sans';
+    font-family: 'Fira Sans';
     line-height: 100%;
     letter-spacing: 0.02em;
-      }
+  }
 
-      /*...anchor--*/
-.send-message {
-    align-items:center;
+  /*...anchor--*/
+  .send-message {
+    align-items: center;
     background-color: #fff;
     border-radius: 100px;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
@@ -251,7 +253,40 @@ textarea{
     text-decoration: none;
     justify-content: center;
     width: 12em;
-      }
+  }
+
+  .mapview {
+    grid-row:3/ span 2;
+    grid-column:1/ span 2;
+    height:407px;
+  }
+
+  .mapview div{
+    width: 323px;
+    height: 206px;
+    background-color:#FAB131;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    position:relative;
+    bottom:34.5em;
+    left:6.3em;
+  }
+
+  .mapview div h2 {
+    color:white;
+    text-align:center;
+    padding-top:0.5em;
+  }
+
+  .mapview div p {
+    padding-left:2em;
+  }
+
+  #pin {
+    position:relative;
+    left:33em;
+    bottom:17em;
+  }
+
 
   /*---------------------------------------------------------*/
   /*----------------------- footer block --------------------*/
