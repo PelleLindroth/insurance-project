@@ -32,6 +32,66 @@ h3 {
   letter-spacing: -0.02em;
   line-height: 41px;
 }
+textarea{ 
+  width: 52%;
+  height: 150px;
+  margin-top: 10px;
+  padding: 18px 16px 18px 16px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  resize:none;
+  font-size: 14px;
+  font-family:'Fira Sans';
+  line-height: 100%;
+  letter-spacing: 0.02em;
+    }
+     /*text flexbox one*/
+     .topic{
+      margin-left:70px;
+      margin-top: 100px;
+      color: #ffffff;
+      letter-spacing: 0.02em;
+      font-style: normal;
+         }
+
+    /*---your email box---*/ 
+   input[type=text1], select {
+      width: 50%;
+      padding: 12px 20px;
+      margin: 10px 1px 10px 1px;
+      border: 1px solid #fefefe;
+      background-color: #fefefe;
+      border-radius: 4px;
+      } 
+
+    /*your email--your message text */
+  label{
+      color: #ffffff;
+      font-weight: bold;
+      font-family: 'Fira sans';
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0.02em;
+        } 
+         /*...anchor--*/
+  .send-message {
+    align-items:center;
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 1.2rem;
+    margin-left: 169px;
+    height: 3em;
+    text-decoration: none;
+    justify-content: center;
+    width: 12em;
+        }
+
 
 /*--------------------------------------------------------*/
 /*-------------------- MOBILE LAYOUT ---------------------*/
@@ -75,9 +135,51 @@ h3 {
 
 /*------------------------------nav */
 
-nav {
+ nav {
   display: none;
-}
+ }
+ /*------main block-----*/
+
+    
+ @media screen and (max-width:650px){
+ .wrapper {
+      display: flex;
+      flex-direction: column;
+              }
+  main{
+                
+      max-width: 650px;
+                }
+ /*grid container*/
+ .box{
+      display: flex;
+      flex-direction: column;
+      background-color:#A9A19E;;
+      align-items: center;
+                }
+        
+ .topic{
+      margin-left: 0;
+      text-align: center;
+      margin-bottom: 10px;
+                }
+/*flexbox one*/
+.box-one{
+      display: flex;
+      flex-direction: column;
+                }
+ /*flexbox two*/
+ .box-two{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+              }
+ .send-message{
+      margin-left: 0;
+              }
+              
+          }
 
 /*-----------------------------------------------------------*/
 /*-------------------- DESKTOP LAYOUT -----------------------*/
@@ -191,69 +293,7 @@ nav {
     margin-top: 100px;
   }
 
-  /*text flexbox one*/
-  .topic {
-    margin-left: 70px;
-    margin-top: 100px;
-    color: #ffffff;
-    letter-spacing: 0.02em;
-    font-style: normal;
-  }
-
-  /*---your email box---*/
-  input[type='text1'],
-  select {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 10px 1px 10px 1px;
-    border: 1px solid #fefefe;
-    background-color: #fefefe;
-    border-radius: 4px;
-  }
-
-  /*your email--your message text */
-  label {
-    color: #ffffff;
-    font-weight: bold;
-    font-family: 'Fira sans';
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0.02em;
-  }
-
-  /*---textarea box--*/
-  textarea {
-    width: 52%;
-    height: 150px;
-    margin-top: 10px;
-    padding: 18px 16px 18px 16px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    resize: none;
-    font-size: 14px;
-    font-family: 'Fira Sans';
-    line-height: 100%;
-    letter-spacing: 0.02em;
-  }
-
-  /*...anchor--*/
-  .send-message {
-    align-items: center;
-    background-color: #fff;
-    border-radius: 100px;
-    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-    margin-top: 1.2rem;
-    margin-left: 169px;
-    height: 3em;
-    text-decoration: none;
-    justify-content: center;
-    width: 12em;
-  }
+  
 
   .mapview {
     grid-row:3/ span 2;
