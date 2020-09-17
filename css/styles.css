@@ -147,12 +147,95 @@ main {
   display: grid;
   grid-template-rows: auto auto auto;
 }
+/*-----main block three grid container-----*/
+.main-container-four {
+  display: flex;
+  grid-row: 3;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+
+/*.....main container four numbers....*/
+.list {
+  display: flex;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  flex-direction: column;
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.4);
+}
+/*.....main block three text.....*/
+h4 {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.7);
+}
+/*...... main block three flexboxes....*/
+.container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 340px;
+}
+
+.flex-0 {
+  background: #c7ddea;
+}
+
+.flex-1 {
+  background: #ffffff;
+  position: relative;
+}
+
+.flex-2 {
+  background: #ebebeb;
+  position: relative;
+}
+
+.flex-3 {
+  background: #ffffff;
+  position: relative;
+}
+
+.flex-4 {
+  background: #f17949;
+  position: relative;
+}
+.flex-5 {
+  background: #ffffff;
+  position: relative;
+}
 
 /*----------------------------------------------------------*/
 /*------------------------- footer block -------------------*/
+.footer-container {
+  display: flex;
+  grid-row: 4;
+  flex-flow: row wrap;
+}
 
-footer {
-  background-color: #777574;
+.col-4-1 {
+  display: none;
+  
+}
+.col-4-2 {
+  background: #777574;
+  width: 100%;
+  height: 340px;
 }
 
 /*----------------------------------------------------------*/
