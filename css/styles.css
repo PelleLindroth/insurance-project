@@ -149,6 +149,136 @@ main {
   grid-template-rows: auto auto auto;
 }
 
+.main-container-one {
+  background-color: #a9a19e;
+  grid-column: 1;
+  grid-row: 1;
+  height: 612px;
+  display: flex;
+  flex-direction: column;
+  padding: 8em 0 0 8em;
+}
+
+.main-container-one h2 {
+  color: #ffffff;
+}
+
+.main-container-two {
+  grid-column: 2;
+  grid-row: 1 / span 1;
+  padding: 8em 0 0 8em;
+  background-color: #a9a19e;
+}
+
+.main-container-two p {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-container-three {
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  background-color: #fab131;
+  height: 612px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container-three h2 {
+  color: #ffffff;
+}
+
+.main-container-three p {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 2em;
+}
+
+.main-cardboard {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-cardboard div {
+  width: 256px;
+  height: 308px;
+  background-color: white;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  overflow:visible;
+  border-radius:5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-cardboard div h4 {
+  margin-top:1em;
+  font-family:'Frank Ruhl Libre', serif;
+  font-weight:bold;
+  font-size:16px;
+  line-height:20px;
+  color:rgba(0, 0, 0, 0.9);
+}
+
+.main-cardboard div p {
+  font-family:'Fira Sans', sans-serif;
+  font-weight:bold;
+  font-size:11px;
+  line-height:18px;
+  color:rgba(0, 0, 0, 0.4);
+  text-align:center;
+  margin-top:1em;
+}
+
+.main-cardboard div div {
+  background-color: #c7ddea;
+  width: 236px;
+  height: 150px;
+  border-radius: 4px;
+  object-fit: contain;
+  overflow: hidden;
+
+  
+}
+
+#cardboard2 {
+  background-color: #fab131;
+}
+
+#cardboard3 {
+  background-color: #f17949;
+}
+
+.main-cardboard div div img {
+  object-fit: contain;
+}
+
+#child {
+  position: relative;
+  top: 1.5em;
+}
+
+#adult {
+  position: relative;
+  top:1em;
+}
+
+#old {
+  position: relative;
+  top:2em;
+}
+
 /*----------------------------------------------------------*/
 /*------------------------- footer block -------------------*/
 
@@ -320,9 +450,6 @@ footer {
     display: grid;
     grid-template-rows: auto auto auto auto;
   }
-
-  /*--------------------------------------------------------*/
-  /*-------------------- footer block ----------------------*/
 
   .main-container-one {
     background-color: #a9a19e;
@@ -531,7 +658,8 @@ footer {
     position: relative;
   }
 
-  /*.....this is footer block....*/
+ /*--------------------------------------------------------*/
+  /*-------------------- footer block ----------------------*/
 
   .col-4-1 {
     display: flex;
