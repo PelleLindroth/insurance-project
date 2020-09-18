@@ -89,6 +89,8 @@ header {
   
 }
 
+
+
 .container-one-image {
   height: 50vh;
   position: relative;
@@ -473,6 +475,9 @@ h4 {
     box-sizing:border-box;
   }
 
+  a:hover {
+    background-color:#d4daed;
+  }
   .container-one-image {
     height: 50vh;
     position: relative;

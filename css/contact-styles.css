@@ -229,11 +229,18 @@ footer {
   /*---------------------------------------------------------*/
   /*------------------------ header block -------------------*/
 
+
+  a:hover {
+    background-color:#d4daed;
+  }
+
+  
   header {
     display: grid;
     grid-template-rows: auto auto;
   }
 
+  
   /*----------------------------- main header */
 
   .main-header-container {
