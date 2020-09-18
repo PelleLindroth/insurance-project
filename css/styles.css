@@ -636,6 +636,7 @@ h4 {
     line-height: 20px;
     color: rgba(0, 0, 0, 0.6);
     margin-top: 2em;
+    text-align:center;
   }
 
   .main-cardboard {
@@ -667,6 +668,7 @@ h4 {
     font-size:16px;
     line-height:20px;
     color:rgba(0, 0, 0, 0.9);
+    margin-top:9.3em;
   }
 
   .main-cardboard div p {
