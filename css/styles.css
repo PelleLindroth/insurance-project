@@ -54,7 +54,10 @@ header {
   display: flex;
   grid-row: 1;
   flex-direction: column;
+  min-height: 650px;
   padding: 3em 4% 0;
+  position: relative;
+  z-index: 1000;
 }
 
 .container-one-text > p {
@@ -86,21 +89,19 @@ header {
   padding: 15px;
   justify-content: center;
   width: 131px;
-  
 }
 
-
-
 .container-one-image {
+  align-items: flex-end;
+  bottom: 0px;
   height: 50vh;
-  position: relative;
+  display: flex;
+  position: absolute;
+  z-index: 1;
 }
 
 .family {
-  max-width: 400px;
-  bottom: 0px;
-  position: absolute;
-  width: 100%;
+  width: 96%;
 }
 
 /*-------------------- header container two */
@@ -167,8 +168,6 @@ main {
   flex-direction: column;
   justify-content:flex-start;
   align-items:center;
-  
-  
 }
 
 .join-buttonmain {
