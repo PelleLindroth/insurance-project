@@ -94,10 +94,8 @@ header {
 .container-one-image {
   align-items: flex-end;
   bottom: 0px;
-  height: 50vh;
   display: flex;
   position: absolute;
-  z-index: 1;
 }
 
 .family {
@@ -384,6 +382,7 @@ h4 {
 
 /*----------------------------------------------------------*/
 /*------------------------- footer block -------------------*/
+
 .footer-container {
   display: flex;
   grid-row: 4;
@@ -397,7 +396,7 @@ h4 {
 .col-4-2 {
   background: #777574;
   width: 100%;
-  height: 340px;
+  height: 30vh;
 }
 
 }
