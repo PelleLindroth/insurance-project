@@ -83,8 +83,7 @@ h3 {
   /*---------------------------------------------------*/
   /*------------------ main block ---------------------*/
 
-  /*flexbox container*/
-  .box {
+  main {
     display: flex;
     flex-direction: column;
     background-color: #a9a19e;
@@ -305,13 +304,9 @@ footer {
   /*------------------------ main block ---------------------*/
 
   main {
-    grid-template-rows: auto auto;
-  }
-
-  /*grid container*/
-  .box {
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
     background-color: #a9a19e;
     gap: 1px;
   }
