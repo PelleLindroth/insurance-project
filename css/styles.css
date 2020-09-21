@@ -32,377 +32,364 @@ h3 {
 /*----------------------------------------------------------*/
 /*-------------------- MOBILE LAYOUT -----------------------*/
 /*----------------------------------------------------------*/
+
 @media screen and (max-width: 650px) {
+  .wrapper {
+    display: grid;
+    grid-template-rows: auto auto auto;
+  }
 
-.wrapper {
-  display: grid;
-  grid-template-rows: auto auto auto;
-}
+  /*----------------------------------------------------------*/
+  /*-------------------- header block ------------------------*/
 
-/*----------------------------------------------------------*/
-/*-------------------- header block ------------------------*/
+  header {
+    display: grid;
+    grid-template-rows: auto 45vh 45vh auto;
+  }
 
-header {
-  display: grid;
-  grid-template-rows: auto 45vh 45vh auto;
-}
+  /*------------------- header container one */
 
-/*------------------- header container one */
+  .header-container-one {
+    background-color: #c7ddea;
+    display: flex;
+    grid-row: 1;
+    flex-direction: column;
+    min-height: 650px;
+    padding: 3em 4% 0;
+    position: relative;
+    z-index: 1000;
+  }
 
-.header-container-one {
-  background-color: #c7ddea;
-  display: flex;
-  grid-row: 1;
-  flex-direction: column;
-  min-height: 650px;
-  padding: 3em 4% 0;
-  position: relative;
-  z-index: 1000;
-}
+  .container-one-text > p {
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 2em 0 0;
+  }
 
-.container-one-text > p {
-  color: rgba(0, 0, 0, 0.6);
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  margin: 2em 0 0;
-}
+  .container-one-text span {
+    color: #fff;
+  }
 
-.container-one-text span {
-  color: #fff;
-}
+  .join-button {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 3rem;
+    text-decoration: none;
+    padding: 15px;
+    justify-content: center;
+    width: 131px;
+  }
 
-.join-button {
-  align-items: center;
-  background-color: #fff;
-  border-radius: 100px;
-  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
-  color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-  margin-top: 3rem;
-  text-decoration: none;
-  padding: 15px;
-  justify-content: center;
-  width: 131px;
-}
+  .container-one-image {
+    align-items: flex-end;
+    bottom: 0px;
+    display: flex;
+    position: absolute;
+  }
 
-.container-one-image {
-  align-items: flex-end;
-  bottom: 0px;
-  display: flex;
-  position: absolute;
-}
+  .family {
+    width: 96%;
+  }
 
-.family {
-  width: 96%;
-}
+  /*-------------------- header container two */
 
-/*-------------------- header container two */
+  .header-container-two,
+  .header-container-three {
+    display: grid;
+    padding: 15%;
+    place-items: center;
+    text-align: center;
+  }
 
-.header-container-two,
-.header-container-three {
-  display: grid;
-  padding: 15%;
-  place-items: center;
-  text-align: center;
-}
+  .header-container-two {
+    background-color: #f17949;
+    grid-row: 2;
+  }
 
-.header-container-two {
-  background-color: #f17949;
-  grid-row: 2;
-}
+  /*------------------ header container three */
 
-/*------------------ header container three */
+  .header-container-three {
+    background-color: #fab131;
+    grid-row: 3;
+  }
 
-.header-container-three {
-  background-color: #fab131;
-  grid-row: 3;
-}
+  .cta h3 {
+    margin-top: 5px;
+  }
 
-.cta h3 {
-  margin-top: 5px;
-}
+  .cta p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.02em;
+  }
 
-.cta p {
-  color: rgba(0, 0, 0, 0.5);
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: bold;
-  font-size: 11px;
-  line-height: 13px;
-  letter-spacing: -0.02em;
-}
+  .cta a {
+    color: #fff;
+    text-decoration: none;
+  }
 
-.cta a {
-  color: #fff;
-  text-decoration: none;
-}
+  /*---------------------------------nav */
 
-/*---------------------------------nav */
+  .menu {
+    display: none;
+  }
 
-.menu {
-  display: none;
-}
+  /*----------------------------------------------------------*/
+  /*------------------------ main block ----------------------*/
 
-/*----------------------------------------------------------*/
-/*------------------------ main block ----------------------*/
+  main {
+    display: grid;
+    grid-template-rows: 1580px auto auto auto auto;
+  }
 
-main {
-  display: grid;
-  grid-template-rows: 1580px auto auto auto auto;
-}
+  .main-container-one {
+    background-color: #a9a19e;
+    grid-column: 1;
+    grid-row: 1;
+    height: 612px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
+  .join-buttonmain {
+    display: none;
+  }
 
-.main-container-one {
-  background-color: #a9a19e;
-  grid-column: 1;
-  grid-row: 1;
-  height: 612px;
-  display: flex;
-  flex-direction: column;
-  justify-content:flex-start;
-  align-items:center;
-}
+  .main-container-one h2 {
+    color: #ffffff;
+    margin-top: 1em;
+    z-index: 10;
+  }
 
-.join-buttonmain {
- display:none;
- 
-}
+  .main-container-one p {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    width: 343px;
+    margin-top: 1em;
+    margin-left: 3em;
+  }
 
-.main-container-one h2 {
-  color: #ffffff;
-  margin-top:1em;
-  z-index:10;
-}
+  .main-container-three {
+    grid-row: 3;
+    grid-column: 1;
+    background-color: #fab131;
+    height: 612px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .main-container-three h2 {
+    color: #ffffff;
+  }
 
-.main-container-one p {
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.6);
-  z-index:10;
-  width:343px;
-  margin-top:1em;
-  margin-left:3em;
-}
+  .main-container-three p {
+    font-family: 'Fira Sans', sans-serif;
+    width: 278px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 2em;
+    text-align: center;
+  }
 
-.main-container-three {
-  grid-row: 3;
-  grid-column: 1;
-  background-color: #fab131;
-  height: 612px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  /*------------------- cards  */
 
-.main-container-three h2 {
-  color: #ffffff;
-}
+  .main-cardboard {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #a9a19e;
+  }
 
-.main-container-three p {
-  font-family: 'Fira Sans', sans-serif;
-  width:278px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: rgba(0, 0, 0, 0.6);
-  margin-top: 2em;
-  text-align:center;
-}
+  .main-cardboard div {
+    width: 256px;
+    height: 308px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 4em;
+  }
 
-.main-cardboard {
-  grid-row: 1;
-  grid-column: 1;
-  display: flex;
-  flex-direction:column;
-  align-items: center;
-  justify-content:flex-end;
-  background-color:#a9a19e;
-  
-  
-}
+  .main-cardboard div h4 {
+    margin-top: 8em;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.9);
+  }
 
-.main-cardboard div {
-  width: 256px;
-  height: 308px;
-  background-color: white;
-  display: flex;
-  flex-direction:column;
-  align-items: center;
-  overflow:visible;
-  border-radius:5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  position:relative;
-  margin-bottom:4em;
-}
+  .main-cardboard div p {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin-top: 1em;
+  }
 
-.main-cardboard div h4 {
-  margin-top:8em;
-  font-family:'Frank Ruhl Libre', serif;
-  font-weight:bold;
-  font-size:16px;
-  line-height:20px;
-  color:rgba(0, 0, 0, 0.9);
-}
+  .main-cardboard div div {
+    background-color: #c7ddea;
+    width: 236px;
+    height: 150px;
+    border-radius: 4px;
+    object-fit: contain;
+    overflow: hidden;
+    position: absolute;
+    bottom: 9em;
+  }
 
-.main-cardboard div p {
-  font-family:'Fira Sans', sans-serif;
-  font-weight:bold;
-  font-size:11px;
-  line-height:18px;
-  color:rgba(0, 0, 0, 0.4);
-  text-align:center;
-  margin-top:1em;
-}
+  #cardboard2 {
+    background-color: #fab131;
+  }
 
-.main-cardboard div div {
-  background-color: #c7ddea;
-  width: 236px;
-  height: 150px;
-  border-radius: 4px;
-  object-fit: contain;
-  overflow: hidden;
-  position:absolute;
-  bottom:9em;
-}
+  #cardboard3 {
+    background-color: #f17949;
+  }
 
-#cardboard2 {
-  background-color: #fab131;
-}
+  #cardboard3margin {
+    margin-bottom: 3em;
+  }
 
-#cardboard3 {
-  background-color: #f17949;
-  
-}
+  .main-cardboard div div img {
+    object-fit: contain;
+  }
 
-#cardboard3margin {
-  margin-bottom:3em;
-}
+  #child {
+    position: relative;
+    top: 1.5em;
+  }
 
-.main-cardboard div div img {
-  object-fit: contain;
-}
+  #adult {
+    position: relative;
+    top: 1em;
+  }
 
-#child {
-  position: relative;
-  top: 1.5em;
-}
+  #old {
+    position: relative;
+    top: 2em;
+  }
 
-#adult {
-  position: relative;
-  top:1em;
-}
+  /*------------- main container four */
 
-#old {
-  position: relative;
-  top:2em;
-}
+  .main-container-four {
+    display: flex;
+    grid-row: 5;
+    flex-direction: column;
+    width: 100%;
+  }
 
+  .list {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    flex-direction: column;
+    font-family: 'Frank Ruhl Libre';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.4);
+  }
 
+  h4 {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.7);
+  }
 
+  .container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 12em;
+  }
 
-/*-----main block three grid container-----*/
-.main-container-four {
-  display: flex;
-  grid-row: 5;
-  flex-direction: column;
-  width: 100%;
-}
+  .flex-0 {
+    background: #c7ddea;
+  }
 
+  .flex-1 {
+    background: #ffffff;
+    position: relative;
+  }
 
+  .flex-2 {
+    background: #ebebeb;
+    position: relative;
+  }
 
-/*.....main container four numbers....*/
-.list {
-  display: flex;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  flex-direction: column;
-  font-family: 'Frank Ruhl Libre';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 100%;
-  letter-spacing: 0.02em;
-  color: rgba(0, 0, 0, 0.4);
-}
-/*.....main block three text.....*/
-h4 {
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  color: rgba(0, 0, 0, 0.7);
-}
-/*...... main block three flexboxes....*/
-.container {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 12em;
-}
+  .flex-3 {
+    background: #ffffff;
+    position: relative;
+  }
 
-.flex-0 {
-  background: #c7ddea;
-}
+  .flex-4 {
+    background: #f17949;
+    position: relative;
+  }
+  .flex-5 {
+    background: #ffffff;
+    position: relative;
+  }
 
-.flex-1 {
-  background: #ffffff;
-  position: relative;
-}
+  /*----------------------------------------------------------*/
+  /*------------------------- footer block -------------------*/
 
-.flex-2 {
-  background: #ebebeb;
-  position: relative;
-}
+  footer {
+    display: flex;
+    grid-row: 4;
+    flex-flow: row wrap;
+  }
 
-.flex-3 {
-  background: #ffffff;
-  position: relative;
-}
-
-.flex-4 {
-  background: #f17949;
-  position: relative;
-}
-.flex-5 {
-  background: #ffffff;
-  position: relative;
-}
-
-
-
-/*----------------------------------------------------------*/
-/*------------------------- footer block -------------------*/
-
-footer {
-  display: flex;
-  grid-row: 4;
-  flex-flow: row wrap;
-}
-
-.col-4-1 {
-  display: none;
-  
-}
-.col-4-2 {
-  background: #777574;
-  width: 100%;
-  height: 30vh;
-}
-
+  .col-4-1 {
+    display: none;
+  }
+  .col-4-2 {
+    background: #777574;
+    width: 100%;
+    height: 30vh;
+  }
 }
 
 /*----------------------------------------------------------*/
@@ -410,7 +397,6 @@ footer {
 /*----------------------------------------------------------*/
 
 @media screen and (min-width: 651px) {
-
   .wrapper {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -474,7 +460,7 @@ footer {
     padding: 15px;
     justify-content: center;
     width: 131px;
-    box-sizing:border-box;
+    box-sizing: border-box;
   }
 
   .container-one-image {
@@ -561,7 +547,7 @@ footer {
   }
 
   .menu > a:hover {
-    background-color:#d4daed;
+    background-color: #d4daed;
   }
 
   .menu > a:first-child {
@@ -578,14 +564,13 @@ footer {
 
   .main-container-one {
     background-color: #a9a19e;
-    grid-column: 1/ span 2;
+    grid-column: 1 / span 2;
     grid-row: 1;
     height: 612px;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 8em 0 0 8em;
-    
   }
 
   .join-buttonmain {
@@ -602,15 +587,14 @@ footer {
     padding: 15px;
     justify-content: center;
     width: 131px;
-    position:absolute;
-    top:125em;
-    box-sizing:border-box;
+    position: absolute;
+    top: 125em;
+    box-sizing: border-box;
   }
 
   .main-container-one h2 {
     color: #ffffff;
   }
-
 
   .main-container-one p {
     font-family: 'Fira Sans', sans-serif;
@@ -618,8 +602,7 @@ footer {
     font-size: 14px;
     line-height: 24px;
     color: rgba(0, 0, 0, 0.6);
-    margin-right:9em;
-    
+    margin-right: 9em;
   }
 
   .main-container-three {
@@ -644,8 +627,11 @@ footer {
     line-height: 20px;
     color: rgba(0, 0, 0, 0.6);
     margin-top: 2em;
-    text-align:center;
+    max-width: 45%;
+    text-align: center;
   }
+
+  /* ------------ cards */
 
   .main-cardboard {
     grid-row: 1 / span 2;
@@ -660,32 +646,31 @@ footer {
     height: 308px;
     background-color: white;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
-    overflow:visible;
-    border-radius:5px;
+    overflow: visible;
+    border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    position:relative;
-    
+    position: relative;
   }
 
   .main-cardboard div h4 {
-    margin-top:8em;
-    font-family:'Frank Ruhl Libre', serif;
-    font-weight:bold;
-    font-size:16px;
-    line-height:20px;
-    color:rgba(0, 0, 0, 0.9);
+    margin-top: 8em;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.9);
   }
 
   .main-cardboard div p {
-    font-family:'Fira Sans', sans-serif;
-    font-weight:bold;
-    font-size:11px;
-    line-height:18px;
-    color:rgba(0, 0, 0, 0.4);
-    text-align:center;
-    margin-top:1em;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin-top: 1em;
   }
 
   .main-cardboard div div {
@@ -695,11 +680,8 @@ footer {
     border-radius: 4px;
     object-fit: contain;
     overflow: hidden;
-    position:absolute;
-    bottom:13em;
-
-  
-    
+    position: absolute;
+    bottom: 13em;
   }
 
   #cardboard2 {
@@ -721,15 +703,16 @@ footer {
 
   #adult {
     position: relative;
-    top:1em;
+    top: 1em;
   }
 
   #old {
     position: relative;
-    top:2em;
+    top: 2em;
   }
 
-  /*-----main block three grid container-----*/
+  /*----- main container four */
+
   .main-container-four {
     display: flex;
     grid-row: 3;
@@ -743,7 +726,6 @@ footer {
     flex-flow: row wrap;
   }
 
-  /*.....main container four numbers....*/
   .list {
     display: flex;
     position: absolute;
@@ -758,7 +740,7 @@ footer {
     letter-spacing: 0.02em;
     color: rgba(0, 0, 0, 0.4);
   }
-  /*.....main block three text.....*/
+
   h4 {
     font-family: 'Fira Sans';
     font-style: normal;
@@ -768,7 +750,7 @@ footer {
     letter-spacing: 0.02em;
     color: rgba(0, 0, 0, 0.7);
   }
-  /*...... main block three flexboxes....*/
+
   .container {
     display: flex;
     text-align: center;
@@ -806,9 +788,9 @@ footer {
     position: relative;
   }
 
-/*----------------------------------------------------------*/
-/*------------------------- footer block -------------------*/
-  
+  /*----------------------------------------------------------*/
+  /*------------------------- footer block -------------------*/
+
   .col-4-1 {
     display: flex;
     flex-direction: column;
