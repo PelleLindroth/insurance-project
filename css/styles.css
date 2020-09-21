@@ -473,9 +473,6 @@ footer {
     box-sizing:border-box;
   }
 
-  a:hover {
-    background-color:#d4daed;
-  }
   .container-one-image {
     height: 50vh;
     position: relative;
@@ -557,6 +554,10 @@ footer {
     color: #000;
     opacity: 0.4;
     text-decoration: none;
+  }
+
+  .menu > a:hover {
+    background-color:#d4daed;
   }
 
   .menu > a:first-child {
