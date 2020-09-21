@@ -153,7 +153,7 @@ header {
 
 main {
   display: grid;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: 1580px auto auto auto auto;
 }
 
 
@@ -176,6 +176,7 @@ main {
 .main-container-one h2 {
   color: #ffffff;
   margin-top:1em;
+  z-index:10;
 }
 
 
@@ -185,8 +186,9 @@ main {
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.6);
-  margin-top:2em;
+  z-index:10;
   width:343px;
+  margin-top:1em;
   margin-left:3em;
 }
 
@@ -217,13 +219,15 @@ main {
 }
 
 .main-cardboard {
-  grid-row: 2;
+  grid-row: 1;
   grid-column: 1;
   display: flex;
   flex-direction:column;
   align-items: center;
-  justify-content:center;
-  background-color: #a9a19e;
+  justify-content:flex-end;
+  background-color:#a9a19e;
+  
+  
 }
 
 .main-cardboard div {
@@ -237,7 +241,7 @@ main {
   border-radius:5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   position:relative;
-  margin-bottom:6em;
+  margin-bottom:4em;
 }
 
 .main-cardboard div h4 {
@@ -267,7 +271,7 @@ main {
   object-fit: contain;
   overflow: hidden;
   position:absolute;
-  bottom:8em;
+  bottom:9em;
 }
 
 #cardboard2 {
@@ -280,7 +284,7 @@ main {
 }
 
 #cardboard3margin {
-  margin-bottom:5em;
+  margin-bottom:3em;
 }
 
 .main-cardboard div div img {
@@ -640,6 +644,7 @@ footer {
     line-height: 20px;
     color: rgba(0, 0, 0, 0.6);
     margin-top: 2em;
+    text-align:center;
   }
 
   .main-cardboard {
